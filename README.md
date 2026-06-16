@@ -1,6 +1,6 @@
 # Quiz Education — Project Overview
 
-> Hệ thống quản lý lớp học và thi trắc nghiệm trực tuyến, full-stack TypeScript.
+> Hệ thống quản lý lớp học và thi trắc nghiệm trực tuyến
 
 ---
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 2. Kiến Trúc Hệ Thống
+
 
 ### Backend — 4-Layer Architecture
 
@@ -52,7 +52,7 @@ src/
 
 ---
 
-## 3. Chức Năng Hệ Thống
+## 2. Chức Năng Hệ Thống
 
 ### 3.1 Authentication & Profile
 
@@ -117,7 +117,7 @@ Luồng hoàn chỉnh: **Teacher tạo lớp → chia sẻ mã 6 ký tự → St
 
 ---
 
-## 4. Phân Quyền & Vai Trò
+## 3. Phân Quyền & Vai Trò
 
 Hệ thống có **3 role** theo thứ bậc: `Admin > Teacher > Student`
 
@@ -183,7 +183,7 @@ Middleware `auth.middleware.ts` cung cấp 4 guard:
 
 
 
-## 5. Data Models
+## 4. Data Models
 
 ### User
 | Field | Type | Ghi chú |
@@ -229,7 +229,7 @@ Middleware `auth.middleware.ts` cung cấp 4 guard:
 
 ---
 
-## 6. Frontend Pages
+## 5. Frontend Pages
 
 | Role | Route | Component | Chức năng |
 |---|---|---|---|
@@ -260,7 +260,7 @@ Middleware `auth.middleware.ts` cung cấp 4 guard:
 
 ---
 
-## 7. Toàn Bộ API Routes
+## 6. Toàn Bộ API Routes
 
 ### Auth
 ```
