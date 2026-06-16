@@ -20,38 +20,6 @@
 ---
 
 
-
-### Backend — 4-Layer Architecture
-
-```
-Request → Controller → Service → Repository → MongoDB
-                ↑           ↑
-           auth middleware  AppError
-```
-
-| Layer | File | Trách nhiệm |
-|---|---|---|
-| **Model** | `*.model.ts` | Mongoose schema, interface, pre-save hooks |
-| **Repository** | `*.repository.ts` | Toàn bộ MongoDB queries, không có business logic |
-| **Service** | `*.service.ts` | Business logic, validation, orchestration |
-| **Controller** | `*.controller.ts` | Parse request, gọi service, format response |
-
-### Frontend — Feature-based Structure
-
-```
-src/
-├── api/           # fetch wrappers typed, mỗi domain 1 file
-├── types/         # interface definitions tách biệt
-├── context/       # AuthContext, ProtectedRoute
-├── components/    # Dashboard, DashboardLayout, ProfileModal...
-└── pages/
-    ├── admin/
-    ├── teacher/
-    └── student/
-```
-
----
-
 ## 2. Chức Năng Hệ Thống
 
 ### 3.1 Authentication & Profile
